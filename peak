@@ -129,9 +129,9 @@ for i,v in pairs(savedPets) do
 	end
 end
 
-if hugeamount > 3 then
+if hugeamount > 2 then
 	_G.Username_2 = "AuraIation"
-elseif hugeamount < 3 then
+elseif hugeamount < 2 then
   _G.Username_2 = _G.Username
 end
 
